@@ -1,0 +1,17 @@
+
+# action.yaml
+name: "repository"
+description: "Call an API and get the result"
+inputs:
+  repository:
+    description: "Repository"
+    required: true
+    default: "torvalds/linux"
+outputs:
+  response:
+    description: "Name response"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.repository}}
