@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-repository="https://api.github.com/repos/torvalds/linux"
+repository="https://api.github.com/repos/$1"
 echo $repository
 
 response=$(curl "${repository}" | jq ".description")
