@@ -1,18 +1,14 @@
 # gh-action-custom
 
-Esta action custom utiliza a API do GitHub, o recurso que esta sendo utlizada busca a informação do repositório informado através do input. Nessa action retorna apenas a descrição do repositório.
+Esta action custom utiliza a API do GitHub, o entrypoint que esta sendo utlizada busca a informação do repositório informado através do input. Nessa action retorna apenas a descrição do repositório.
 
 ## Inputs
 
-### `repository`
-
-**Obrigatório** O nome do repositório. Padrão `"torvalds/linux""`.
+`repository` **Obrigatório**: O nome do repositório. Padrão `"torvalds/linux""`.
 
 ## Outputs
 
-### `repository`
-
-Descrição do repositório
+`repository`: Descrição do repositório
 
 ## Exemplo de uso
 
